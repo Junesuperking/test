@@ -96,7 +96,7 @@ void delete_node(unsigned int value)
 
 	pthread_rwlock_wrlock(&(head->rwlock));
 	p = head->node;
-    while(p)
+        while(p)
 	{
 		q = p->next;
 		if (p->value == value)
