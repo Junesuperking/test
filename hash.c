@@ -42,7 +42,7 @@ struct list *find_node(unsigned int value)
 	struct hash_node *head = hashtab[key]
 	pthread_rwlock_rdlock(&(head->rwlock));
 
-    for(p=head->node;p != NULL;p = p->next)
+        for(p=head->node;p != NULL;p = p->next)
 	{
 		if(p->value == value)
 		{
