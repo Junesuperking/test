@@ -104,6 +104,7 @@ void delete_node(unsigned int value)
 			{
 				free(p);
 				p = NULL;
+				head->node = q;
 				pthread_rwlock_unlock(&(head->rwlock));
 				return;
 			}
