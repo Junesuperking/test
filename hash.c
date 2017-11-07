@@ -102,9 +102,9 @@ void delete_node(unsigned int value)
 		{
 			if (r == NULL)
 			{
+				head->node = q;
 				free(p);
 				p = NULL;
-				head->node = q;
 				pthread_rwlock_unlock(&(head->rwlock));
 				return;
 			}
