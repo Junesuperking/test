@@ -37,7 +37,7 @@ unsigned int hash(unsigned int value)
 //查找节点
 struct list *find_node(unsigned int value)
 {
-    struct list *p;
+    	struct list *p;
 	unsigned int key = hash(value)
 	struct hash_node *head = hashtab[key]
 	pthread_rwlock_rdlock(&(head->rwlock));
@@ -57,8 +57,7 @@ struct list *find_node(unsigned int value)
 //添加节点
 struct list *add_node(unsignd int value)
 {
-    struct list *p = NULL;
-	
+    	struct list *p = NULL;
 	struct hash_node *head = hashtab[hash(value)];
 	pthread_rwlock_wrlock(&(head->rwlock));
 	
