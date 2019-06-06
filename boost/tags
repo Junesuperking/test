@@ -1,0 +1,21 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Start	work.cpp	/^bool Work::Start() {$/;"	f	class:Work
+Stop	work.cpp	/^void Work::Stop() {$/;"	f	class:Work
+Work	work.cpp	/^Work::Work() {$/;"	f	class:Work
+Work	work.hpp	/^class Work{$/;"	c
+_WORK_	work.hpp	/^#define _WORK_$/;"	d
+count	work.hpp	/^		int count;$/;"	m	class:Work
+flag	main.cpp	/^volatile bool flag = true;$/;"	v
+func	main.cpp	/^void func(int signum) {$/;"	f
+main	main.cpp	/^int main(void)$/;"	f
+main_thread	work.hpp	/^		thread_ptr main_thread;$/;"	m	class:Work
+run	work.cpp	/^void Work:: run(Work* self) {$/;"	f	class:Work
+thread_flag	work.hpp	/^		volatile bool thread_flag;$/;"	m	class:Work
+thread_ptr	work.hpp	/^typedef boost::shared_ptr<boost::thread> thread_ptr;$/;"	t
+time_interval	work.hpp	/^		int time_interval;$/;"	m	class:Work
+~Work	work.cpp	/^Work::~Work() {$/;"	f	class:Work
